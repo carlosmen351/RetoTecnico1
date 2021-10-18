@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba tecnica</title>
+  </head>
+  <body>
+    <h1>Dibujando Coordenadas</h1>
+    <div>
+      <p>
+        En este plano te mostramos tu punto seleccionado en un plano cartesiano<br>
+      </p>
+      <form>
+        <label for="inLineaX">Selecciona el valor en X</label><br>
+        <input type="number" id="inLineaX"/><br><br>
+        <label for="inLineaY">Selecciona el valor en Y</label><br>
+        <input type="number" id="inLineaY"/><br> <br>
+        <input type="button" id="inBoton" value="Muestrame">
+        <br><br>
+        <input type="reset" value="Volver a intentarlo">
+      </form>
+    </div>
+    <canvas id="plano" maxwidth="600px" maxheight="600px"></canvas>
+    <h4>TU CORDENADA<input type="color" value="#ff0000"></h4>
+    <h1>Grafica de Barras</h1>
+    <p>En este plano podras realizar una grafica de barras de hasta cinco valores diferentes</p>
+    <form>
+    <label for="x1">Valores en X</label><br><br>
+      <input type="number" placeholder="valor1" id="x1">
+      <input type="number" placeholder="valor2" id="x2">
+      <input type="number" placeholder="valor3" id="x3">
+      <input type="number" placeholder="valor4" id="x4">
+      <input type="number" placeholder="valor5" id="x5"><br><br>
+      <label for="y1">Valores en Y</label><br><br>
+      <input type="number" placeholder="valor1" id="y1">
+      <input type="number" placeholder="valor2" id="y2">
+      <input type="number" placeholder="valor3" id="y3">
+      <input type="number" placeholder="valor4" id="y4">
+      <input type="number" placeholder="valor5" id="y5">
+      <br><br>
+      <input type="button" id="inBarras" value="A darle!!"><br><br>
+      <input type="reset" value="Nuevos valores">
+
+
+    </form>
+    <canvas id="barras" width="800px" height="400px"></canvas>
+
+    <p>Asi queda tu grafica</p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script type="module" src="./retoTecnico1.js"></script>
+  </body>
+</html>
